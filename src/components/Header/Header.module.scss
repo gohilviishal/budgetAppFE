@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 2px 8px #f0f1f2; 
+  padding: 0 4px;
+}
+
+.demoLogo {
+  background: url('/logo.png') no-repeat center center;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  margin-right: 4px;
+}
+
+.menu {
+  flex: 1;
+  min-width: 0;
+  .ant-menu-horizontal {
+    border-bottom: none;
+  }
+  .ant-menu-item {
+    color: #000000; 
+  }
+  .ant-menu-item-selected {
+    border-bottom: 2px solid #000000; 
+  }
+}
