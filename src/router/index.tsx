@@ -12,6 +12,7 @@ import {
   Transactions,
 } from "../pages";
 import PrivateRoute from "./PrivateRoute";
+import Listing from "../components/Categories/Listing";
 
 export const AppRouter: React.FC = () => {
   return (
@@ -19,7 +20,8 @@ export const AppRouter: React.FC = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route element={<PrivateRoute />}>
+      <Route element={<PrivateRoute />}>  
+        <Route path="/list" element={<Listing />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="tags" element={<Tags />} />
           <Route path="categories" element={<Categories />} />

@@ -4,10 +4,9 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import styles from "./Register.module.scss";
-import { useGenerateOtp, useVerifyOtp } from "../hooks";
-import { IRegister } from "../types";
-import { useRegister } from "../hooks/register/useRegister";
-import { MainLayout } from "../layouts";
+import { useGenerateOtp, useRegister, useVerifyOtp } from "../../hooks";
+import { IRegister } from './../../types/register.d';
+import { MainLayout } from "../../layouts";
 
 const { Step } = Steps;
 

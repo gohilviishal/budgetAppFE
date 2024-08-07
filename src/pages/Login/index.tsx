@@ -4,9 +4,9 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import styles from "./Login.module.scss";
-import { useAuth, useLogin } from "../hooks";
-import { MainLayout } from "../layouts";
 import { useNavigate } from "react-router-dom";
+import { useAuth, useLogin } from "../../hooks";
+import { MainLayout } from "../../layouts";
 
 const { Content } = Layout;
 

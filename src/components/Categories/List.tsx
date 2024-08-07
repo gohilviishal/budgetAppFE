@@ -37,7 +37,7 @@ export const List: React.FC = () => {
         dataLength={categories.length}
         next={loadMoreData}
         hasMore={!!hasNextPage}
-        loader={<Skeleton avatar paragraph={{ rows: 1 }} active />}
+        loader={<Skeleton paragraph={{ rows: 1 }} active />}
         endMessage={<Divider plain>It is all, nothing more 🤐</Divider>}
         scrollableTarget="scrollableDiv"
       >

@@ -2,11 +2,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Type } from "../enums";
 import { Button, Form } from "antd";
-import { CustomInput, CustomSelect, CustomSwitch, List } from "../components";
-import { typeOptions } from "../utils";
-import { useAddCategory } from "../hooks/categories/useAddCategory";
+import { Type } from "../../enums";
+import { useAddCategory } from "../../hooks";
+import { CustomInput, CustomSelect, CustomSwitch, List } from "../../components";
+import { typeOptions } from "../../utils";
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),

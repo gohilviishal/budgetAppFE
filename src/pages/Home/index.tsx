@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import styles from "./Home.module.scss";
-import { MainLayout } from "../layouts";
+import { MainLayout } from "../../layouts";
 
 const { Content } = Layout;
 
